@@ -2,7 +2,7 @@
 This repository contains **PyTorch** implementations of **reinforcement learning** algorithms. 
 Its purpose is to provide straightforward and easily understandable code for individuals to learn about basic reinforcement learning algorithms.
 
-## **Algorithms Implemented** 
+## **Current Implementations** 
 1. *Deep Q Learning (DQN)* <sub><sup> ([Mnih et al. 2013](https://arxiv.org/pdf/1312.5602.pdf)) </sup></sub>  
 1. *D3QN* <sub><sup> ([Wang et al. 2016](http://proceedings.mlr.press/v48/wangf16.pdf)) </sup></sub>
 1. *Deep Deterministic Policy Gradients (DDPG)* <sub><sup> ([Lillicrap et al. 2016](https://arxiv.org/pdf/1509.02971.pdf) ) </sup></sub>
