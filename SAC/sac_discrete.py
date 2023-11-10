@@ -131,7 +131,7 @@ class Agent():
         self.qf2_target.load_state_dict(self.qf2.state_dict())
 
         # Create optimizers
-        self.actor_optimizer = optim.Adam(self.actor.parameters(), lr=self.actor_lr)  # 优化网络的参数的数值
+        self.actor_optimizer = optim.Adam(self.actor.parameters(), lr=self.actor_lr)  
         self.qf1_optimizer = optim.Adam(self.qf1.parameters(), lr=self.qf_lr)
         self.qf2_optimizer = optim.Adam(self.qf2.parameters(), lr=self.qf_lr)
 
@@ -142,7 +142,7 @@ class Agent():
         if self.automatic_entropy_tuning:
             self.target_entropy = -np.prod((self.act_dim,)).item()
             self.log_alpha = torch.zeros(1, requires_grad=True, device=device)
-            self.alpha_optimizer = optim.Adam([self.log_alpha], lr=self.alpha_lr)  # 优化温度系数的数值
+            self.alpha_optimizer = optim.Adam([self.log_alpha], lr=self.alpha_lr)  
 
     def train_model(self):
         batch = self.replay_buffer.sample(self.batch_size)
